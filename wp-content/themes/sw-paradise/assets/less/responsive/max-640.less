@@ -1,0 +1,43 @@
+@media (max-width: 640px) {
+	.content-search >.post, .content-search .product .entry-thumb {
+		width: 100%;
+		padding-bottom: 15px;
+		img {
+			margin: 0 auto;
+		}
+	}
+	.page-template-page-home2 .index2-category{
+		font-size: 24px !important;
+	}
+	.header-style1 .sw-paradise-header .sw-paradise-account .sw_paradise_cart .wrapp-minicart,
+	.header-style3 .sw-paradise-header .sw-paradise-account .sw_paradise_cart .wrapp-minicart{
+		right: -80px;
+		.rtl &{left: -80px; right: auto;}
+	}
+	.page-template-page-home2{
+		.home2slider-info , .home2-now{display: none;}
+	}
+	.home4-slider{
+		.home4slider-info, .home4-now {display: none;}
+	}
+	.home-slider5{
+		.home5slider-info, .home5-now {display: none;}
+	}
+	//About us
+	.page-about-top p{
+		padding: 0;
+	}
+	//Shop
+	.single-product >.tabs .tabbable .nav.nav-tabs, .bottom-single-product .sw_related_upsell_widget .product-ur .tabbable.tabs .nav.nav-tabs{
+		li{
+			width: 100%; padding: 0;
+			&:before{ display: none;}
+			.rtl &{
+				padding: 0;
+			}
+		}
+		li:first-child{
+			.rtl &{padding: 0;}
+		}
+	}	
+}

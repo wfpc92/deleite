@@ -1,0 +1,197 @@
+// TODO: css for shortcodes.
+
+/* ========================================================== */
+/* Quote Border ============================================= */
+.quote-border{	
+	background-color: #f4f4f4;
+	padding: 20px;
+	margin-bottom: 10px;
+	font-style: italic;
+	border: 1px solid #ddd;
+	.border-radius(3px);
+}
+/* ========================================================== */
+/* Video ==================================================== */
+iframe{
+	border:none;
+	margin-bottom:10px;
+	max-width:100%;
+}
+/* =========================================================== */
+/* Ya Why Choose Us  ========================================= */
+.block-whychoose {
+	margin-bottom:30px !important;
+	display:inline-block;
+	.image-whychoose{
+		float:left;
+		width:64px;
+		.rtl &{
+			float:right;
+		}
+	}
+	.content-whychoose{
+		margin-left:80px;
+		.rtl &{
+			margin-right:80px;
+			margin-left:0;
+		}
+		h2{
+			color:#000;
+			font-size:13px;
+			text-transform:uppercase;
+		}
+		.description{
+			color:#666;
+		}
+	}
+}
+
+/*========================================================*/
+/* Search Faqs ===========================================*/
+.vc_wp_search .widget_search .searchform{
+	.screen-reader-text{
+		display:none;
+	}
+	input[type="submit"]{
+		text-indent:-9999px;
+		display:block;
+		border:0;
+		width:34px !important;
+		height:34px;
+		background: url('../assets/img/search-icon.png') no-repeat scroll center center #666 !important;
+		&:hover{
+			background: url('../assets/img/search-icon.png') no-repeat scroll center center @color !important;
+		}
+	}
+	input[type="text"]{
+		border:1px solid #e1e1e1;
+	}
+}
+/* ======================================================================== */
+/* Titlte ================================================================= */
+.wpb_single_image .vc_single_image-wrapper {
+	img {
+		&:hover {
+			.opacity(.75);
+		}
+	}
+}
+/* =================================================================== */
+/* =================================================================== */
+#wp-calendar {
+	width: 100%;
+	caption {
+		padding: 10px 0;
+	}
+	tr {
+		th {
+			text-align: center;
+		}
+		td {
+			padding: 10px 0;
+			text-align: center;
+		}
+	}
+}
+/* ======================================================== */
+/* ======================================================== */
+#subscribe_popup {
+	text-align: center;
+	padding: 106px 25px 82px 415px;
+	margin: 15px;
+	display: none;
+	.rtl &{
+		padding: 106px 415px 82px 25px;
+		background: url("../assets/img/bg_newsletter.jpg") top right no-repeat !important;
+	}
+	.subscribe-popup-container {
+		width: 380px;
+		.title {
+			font-size: 36px;
+			color: #1b1b1b;
+			text-transform: capitalize;
+			margin-bottom: 17px;
+		}
+		.description {
+			font-size: 14px; line-height: 23px; color: #666; margin-bottom: 34px; padding: 0 10px;
+		}
+		.subscribe-form {
+			margin-bottom: 17px;
+			form{
+				padding: 0;
+				h3 {
+					display: none;
+				}
+				.frm-input {
+					margin: 0;
+					width: 100%; overflow: hidden;
+					.border-radius(0);
+					.frm-email {
+						height: 40px; line-height: 40px;
+						float: left; padding: 0 20px;
+						width: 69%;
+						.border-radius(0);	
+						.rtl &{float: right;}			
+					}
+					.frm-submit {
+						float: left;
+						width: 31%;
+						height: 40px;
+						line-height: 40px;
+						background-color: #252525;
+						color: #fff;
+						text-transform: capitalize;
+						font-size: 13px;
+						border: none;
+						.transition(all .3s);
+						.border-radius(0);
+						&:before {
+							display: none;
+						}
+						&:hover {
+							background-color: @color;
+						}
+						.rtl &{
+							float: right;
+						}
+					}
+				}
+			}
+		}
+		.subscribe-checkbox {
+			line-height: 30px; margin-bottom: 13px;
+			input {
+				cursor: pointer;
+			}
+			label {
+				vertical-align: top;
+				line-height: 25px;
+				margin: 0; color: #666;
+				font-weight: normal;
+			}
+		}
+		.social-share{
+			a{
+				padding: 10px 25px; display: inline-block;
+				i{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+#cboxLoadedContent{overflow:hidden !important;}
+
+// #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span{
+// 	background: @color url('../assets/img/icon_close.png') center center no-repeat;
+// 	width: 31px;
+// 	height: 31px;
+// 	top: -16px;
+// 	right: 15px;
+// 	&:hover{
+// 		background: darken(@color, 10%) url('../assets/img/icon_close.png') center center no-repeat;
+// 	}
+// 	.rtl &{
+// 		right: auto; left: 15px;
+// 	}
+// }

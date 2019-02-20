@@ -1,0 +1,193 @@
+@media (max-width: 991px) {
+	// Header 1
+	#main-menu .primary-menu{
+		text-align: left;
+		.rtl &{text-align: right;}
+	}
+	.header-default #main-menu #primary-menu .navbar-inverse{
+		overflow: hidden;
+		.resmenu-container {
+			.navbar-toggle{
+				padding: 5px 10px;
+				.icon-bar{
+					background: #fff;
+				}
+				&:hover{
+					.icon-bar{
+						background: @color;
+					}
+				}
+			}
+		}
+	}
+	.header-default #main-menu .header-right-search{
+		right: 10px;
+		.rtl &{
+			right: auto; left: 10px;
+		}
+	}
+	// Header 2
+	.header-style1 #main-menu{
+		background: #f5f5f5; border: none;
+		#primary-menu .navbar-inverse{
+			overflow: hidden; background: #f5f5f5;
+			.resmenu-container {
+				.navbar-toggle{
+					padding: 10px; background: #000; margin: 0; border-radius: 0;
+					.icon-bar{
+						background: #fff;
+					}
+					&:hover{
+						.icon-bar{
+							background: @color;
+						}
+					}
+				}
+			}
+		}
+	}
+	// Header 3
+	.vertical_megamenu{
+		.vertical-megamenu{
+			display:none;
+			.sidebar &{
+				display:block;
+			}
+		}
+		.menu-responsive-wrapper{
+			display:block;
+			top:auto;
+			position:relative;
+			.sw_paradise_resmenu{
+				width:100%;
+			}
+		}
+	}
+	.mega-left-title{
+		position: relative; cursor: pointer;
+		strong{
+			padding-left: 20px;
+			.rtl &{
+				padding-right: 20px; padding-left: 0;
+			}
+		}
+		&:before{display: none;}
+		&:after{
+			content: '+'; font-size: 18px; color: #fff; position: absolute;
+			right: 15px; top: 15px;
+			background: transparent; text-align: center;
+			width: 30px; height: 30px; line-height: 27px;
+			border-radius: 50%;	border: 1px #fff solid;
+			.rtl &{
+				right: auto; left: 15px;
+			}
+		}
+		&:hover{
+			&:after{background: #f5f5f5; color: #000;}
+		}
+	}
+	.home3-content-left .resmenu-container{
+		display: none;
+	}
+	// Header 4
+	.header-style3 #main-menu{
+		background: #f5f5f5;
+		#primary-menu .navbar-inverse{
+			overflow: hidden; background: #f5f5f5;
+			.resmenu-container {
+				.navbar-toggle{
+					padding: 10px; background: #000; margin: 0; border-radius: 0;
+					.icon-bar{
+						background: #fff;
+					}
+					&:hover{
+						.icon-bar{
+							background: @color;
+						}
+					}
+				}
+			}
+		}
+	}
+	// Header 5
+	.header-style4, .header-style5{
+		.header-bottom{
+			.sw-paradise-logo{
+				width: 100%; text-align: center;
+			}
+			#main-menu {
+				width: 100%; padding: 0; 
+				#primary-menu {
+					.navbar-inverse{
+						background: #000; overflow: hidden;
+						.navbar-toggle{
+							.icon-bar{
+								background: #fff;	
+							}
+							&:hover{
+								.icon-bar{
+									background: @color;				
+								}
+							}
+						}
+					}
+				}
+				.header-right-search{
+					right: 30px; top: 3px;
+					.icon-search i{
+						color: #fff;
+					}
+					.rtl &{
+						right: auto; left: 30px;
+					}
+				}
+			}
+		}
+	}
+	#subscribe_popup{
+		background-size: 40% !important;
+		padding: 30px 25px 25px 285px;
+		.rtl &{
+			background-size: 40% !important;
+			padding: 30px 285px 25px 25px;
+		}
+		.subscribe-popup-container{
+			.title{
+				font-size: 24px;
+			}
+		}
+	}
+	// Content 1
+	.page-template-page-home1 .sw-woo-container-slider, 
+	.page-template-page-home2 .sw-woo-container-slider, 
+	.page-template-page-home3 .home3-main-bot .woo-slider-default,
+	.page-template-page-home4 .sw-woo-container-slider,
+	.page-template-page-home5 .sw-woo-container-slider,
+	.single-product .sw-woo-container-slider{
+		.slick-next{
+			left: 0;
+		}
+		.slick-prev{
+			right: 0;
+		}
+	}
+	// Content 3
+	.home3-content-left, .home3-content-right, .home3-content-center{
+		width: 100%;
+	}
+	.home3-content-center2, .home3-content-left .wpb_single_image img{
+		display: none;
+	}
+	// Shop
+	.item .item-wrap .item-detail .item-content .item-bottom .group.fancybox{
+		display: none;
+	}
+	.product_detail .slider_img_productd .product-images .product-images-container .slick-slider.product-responsive-thumbnail{
+		.slick-prev{
+			left: -10px;width: 30px;height: 30px;line-height: 30px;
+		}
+		.slick-next{
+			right: -10px;width: 30px;height: 30px;line-height: 30px;
+		}
+	}
+}

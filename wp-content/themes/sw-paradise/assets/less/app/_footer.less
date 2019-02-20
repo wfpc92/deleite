@@ -1,0 +1,190 @@
+.footer.default{
+	background: #F4F4F4;
+	.socials-newsletter{
+		border: 1px #e6e6e6 solid; border-width: 1px 0; background: #fff;
+		.socials-top{
+			margin: 0;
+			.socials-footer{
+				ul{
+					list-style: none; margin: 0; overflow: hidden;
+					li{
+						float: left;
+						.rtl &{
+							float: right;
+						}
+						a{
+							display: block; height: 60px; width: 70px; text-align: center;
+							font-size: 17px; color: #898989; border-right: 1px solid #e6e6e6; .transition(all .3s);
+							.rtl &{
+								border-left: 1px #e6e6e6 solid; border-right: 0;
+							}
+							&:hover{background: @color; color: #fff;}
+						}
+					}
+					li:first-child{
+						a{
+							border-left: 1px solid #e6e6e6;
+							.rtl &{
+								border-right: 1px solid #e6e6e6;
+							}
+						}
+					}
+				}
+			}
+			.form-newsletter{
+				h3{
+					color: #2a2a2a; border-right: 1px solid #e6e6e6; line-height: 60px;
+					float: left; font-size: 20px; margin: 0; width: 22%;
+					.rtl &{
+						border-left: 1px #e6e6e6 solid; border-right: 0; float: right;
+					}
+				}
+				.frm-input{
+					width: 78%; display: inline-block; position: relative; line-height: 60px; padding: 0 180px 0 0;
+					.rtl &{ padding: 0 0 0 180px;}
+					.frm-email{
+						height: 60px; font-size: 12px; border: none; width: 100%; padding-left: 20px; margin: 0;
+						.rtl &{
+							padding-right: 20px; padding-left: 0;
+						}
+					}
+					.frm-submit{
+						height: 60px; border: none; background: #333; color: #fff; border-radius: 0; width: 170px;
+						position: absolute; right: 0; top: 0; .transition(all 0.3s);
+						&:before{
+							content: '\f003'; margin-right: 10px;
+						}
+						&:hover{
+							background: @color; .transition(all 0.3s);
+						}
+						.rtl &{
+							right: auto; left: 0;
+							&:before{display: none;}
+							&:after{
+								content: '\f003'; margin-left: 10px;
+							}
+						}
+					}
+				}
+				.mc4wp-response{
+					.mc4wp-error{
+						p{
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							margin-left: 160px;
+							.rtl &{
+								left: auto; right: 0; margin-left: 0; margin-right: 160px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.footer-center{
+		margin: 0; padding: 30px 0 38px 0; overflow: hidden;
+		.logo-bottom{
+			float: left; margin-right: 70px; position: relative;
+			.rtl &{
+				float: right; margin-right: 0; margin-left: 70px;
+			}
+			a{
+				img{width: 199px;}
+			}
+			&:after{ 
+				content: ""; width: 1px; height: 40px; background: #d6d6d6; right: -35px; top: 15px; position: absolute;
+				.rtl &{
+					right: auto; left: -35px;
+				}
+			}
+		}
+		p{
+			padding-top: 15px; overflow: hidden; line-height: 23px;
+		}
+	}
+	.footer-banner{
+		background: #EBEBEB;
+		.vc_column-inner {padding-top: 20px;}
+		.wpb_single_image {
+			margin-bottom: 20px;
+		}
+	}
+	.footer-copyright-h1{
+		background: #EBEBEB;
+		.footer-copyright-paypal{
+			margin: 0; overflow: hidden;
+			.copyright {
+				padding: 15px 0; color: #343434;
+			}
+			.footer-paypal{
+				padding: 15px 0;
+				a{
+					float: right;
+					.rtl &{
+						float: left;
+					}
+					&:hover{.opacity(0.6);}
+				}
+			}
+		}
+	}
+	.footer-menu{
+		width: 20%; margin-top: 5px;
+		h2.widgettitle{
+			font-size: 20px; color: #272727; margin-bottom: 20px;
+		}
+		.about-store {
+			ul.about-list {
+				list-style: none; margin: 0;
+				li {
+					padding: 6px 0;
+					i {
+						font-size: 16px; margin-right: 25px; float: left; line-height: 20px;
+						&.fa-envelope {
+							font-size: 13px;
+						}
+						.rtl &{
+							margin-right: 0; margin-left: 25px; float: right;
+						}
+					}
+					.ab-pd {
+						line-height: 20px; overflow: hidden; display: block;
+					}
+				}
+				li.call-mail{
+					a{
+						color: @color;
+						&:hover{color:darken(@color,10%);}
+					}
+				}
+			}
+		}
+		ul.menu{
+			li{
+				padding: 5px 0;
+				a{text-transform: capitalize; line-height: 20px;}
+			}
+		}
+	}
+}
+#sw-paradise-totop {
+	background-color: #777;
+	bottom: 15px; right: 15px;
+	text-align: center; position: fixed;
+	height: 50px; width: 50px; line-height: 48px;
+	z-index: 9999;
+	.opacity(1);
+	.border-radius(100%);
+	.transition(all .3s);
+	&:before{
+		content: '\f106'; font-family: fontawesome; color: #fff; font-size: 20px; font-weight: bold;
+	}
+	&:hover {
+		background-color: @color;
+	}
+	.rtl & {
+		right: auto;
+		left: 15px;
+	}
+}

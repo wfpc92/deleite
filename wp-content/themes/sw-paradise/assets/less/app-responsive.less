@@ -1,0 +1,57 @@
+@import "bootstrap/responsive-utilities.less";
+@import "responsive/max-1280.less";
+@import "responsive/max-1199.less";
+@import "responsive/min-992-max-1199.less";
+@import "responsive/max-991.less";
+@import "responsive/min-768-max-991.less";
+@import "responsive/max-767.less";
+@import "responsive/max-640.less";
+@import "responsive/min-481-max-640.less";
+@import "responsive/max-480.less";
+@import "responsive/max-360.less";
+@import "responsive/max-320.less";
+
+
+@media (min-width: 1200px) and (max-width: 1366px) {
+
+}
+
+@media (min-width: 1200px) {    
+    .clear_lg {
+        clear: both;
+    }
+    .rtl{
+        [class*="col-lg-"], [class*="col-md-"], [class*="col-sm-"], [class*="col-xs-"] {
+            float: right;
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .clear_md {
+        clear: both;
+    }
+    .rtl{
+        [class*="col-lg-"], [class*="col-md-"], [class*="col-sm-"], [class*="col-xs-"] {
+            float: right;
+        }
+    }
+}
+
+@media (max-width: 991px) { 
+    .clear_sm {
+        clear: both;
+    }
+    #cpanel-form a.cpanel-control {
+        display: none;
+    }
+}
+@media (max-width: 767px) { 
+    .clear_xs {
+        clear: both;
+    }
+    .rtl{
+        [class*="col-lg-"], [class*="col-md-"], [class*="col-sm-"], [class*="col-xs-"] {
+            float: none;
+        }
+    }
+}

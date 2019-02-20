@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'LoraBold';
+    src: url('fonts/LoraBold.eot');
+    src: url('fonts/LoraBold.eot') format('embedded-opentype'),
+         url('fonts/LoraBold.woff2') format('woff2'),
+         url('fonts/LoraBold.woff') format('woff'),
+         url('fonts/LoraBold.ttf') format('truetype'),
+         url('fonts/LoraBold.svg#LoraBold') format('svg');
+}
